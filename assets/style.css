@@ -1,0 +1,111 @@
+/* ========================
+   RESET & BASE
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================
+   DARK MODE
+======================== */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark-mode .site-header {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .dropdown-menu,
+body.dark-mode .submenu {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .sultech-card,
+body.dark-mode .choose-card {
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+body.dark-mode .site-footer {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark-mode .btn-outline {
+  color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+body.dark-mode .hero-overlay {
+  background: rgba(0,0,0,0.5);
+}
+
+/* ========================
+   HEADER / NAV
+======================== */
+.site-header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.nav.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand .accent {
+  color: #6a0dad;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  padding: 0.5rem 0.7rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.dropdown-menu a:hover {
